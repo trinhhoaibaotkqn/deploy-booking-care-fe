@@ -1,0 +1,186 @@
+.schedule-container {
+    margin: 20px 0;
+
+    .schedule-content {
+        width: 80vw;
+        margin: auto;
+
+        &.component-specialty {
+            width: 40vw;
+            border-left: 1px solid #eee;
+            padding-left: 10px;
+
+            .schedule-content-down {
+                flex-direction: column;
+
+                .time-option {
+                    padding-right: 0;
+                }
+
+                .more-info-booking {
+                    padding-left: 0;
+                    border-top: 1px solid #eee;
+                    margin-top: 10px;
+                    border-left: none;
+                }
+            }
+        }
+
+        .schedule-content-up {
+            .date {
+                margin: 5px 0;
+
+                select {
+                    width: 160px;
+                    height: 25px;
+                    border: none;
+                    border-bottom: 1px solid #000;
+                    font-size: 16px;
+                    font-weight: 600;
+                    color: #337ab7;
+
+                    option {
+                        font-weight: 200;
+                    }
+                }
+            }
+
+            .icon-schedule {
+                text-transform: uppercase;
+                font-weight: 500;
+                margin: 10px 0;
+            }
+        }
+
+        .schedule-content-down {
+            display: flex;
+
+            .time-option {
+                display: flex;
+                flex-wrap: wrap;
+                height: fit-content;
+                padding-right: 20px;
+                max-width: 710px;
+
+                .child-time-option {
+                    width: 160px;
+                    height: 40px;
+                    margin: 5px 10px 5px 0;
+                    text-align: center;
+                    line-height: 40px;
+                    font-weight: 600;
+                    background-color: #eee;
+                    cursor: pointer;
+                }
+            }
+
+            .more-info-booking {
+                padding-left: 20px;
+                border-left: 1px solid #eee;
+                flex-grow: 1;
+
+                .adrress-clinic-container {
+                    .title-clinic {
+                        color: #666666;
+                        font-size: 15px;
+                        font-weight: 600;
+                    }
+
+                    .name-clinic {
+                        padding: 5px 0;
+                        color: #000;
+                        font-size: 14px;
+                        font-weight: 500;
+                    }
+
+                    .address-clinic {
+                        padding: 5px 0 10px 0;
+                        color: #000;
+                        font-size: 14px;
+                        font-weight: 300;
+                    }
+                }
+
+                .price-container {
+                    border-top: 1px solid #eee;
+
+
+                    .price-content-common {
+                        display: flex;
+                        padding-top: 20px;
+
+                        .hide-detail {
+                            color: #45c3d2;
+                            font-size: 15px;
+                            margin-left: 5px;
+                            cursor: pointer;
+                        }
+
+                        .label-price {
+                            color: #666666;
+                            font-size: 16px;
+                            font-weight: 600;
+                        }
+
+                        .price {
+                            margin-left: 5px;
+                            color: #000;
+                            font-size: 16px;
+                            font-weight: 400;
+                        }
+                    }
+
+                    .price-content-detail {
+                        padding-top: 10px;
+
+                        .label-price {
+                            color: #666666;
+                            font-size: 16px;
+                            font-weight: 600;
+                        }
+
+                        .more-info-price {
+                            width: 300px;
+                            margin: 10px auto;
+                            border: 1px solid #ddd;
+
+                            .price-content {
+                                padding: 5px;
+                                height: 60px;
+                                border-bottom: 1px solid #ddd;
+
+                                .price {
+                                    display: flex;
+                                    justify-content: space-between;
+                                    padding-bottom: 5px;
+                                    font-size: 14px;
+                                    font-weight: 400;
+                                }
+
+                                .note {
+                                    font-size: 12px;
+                                    font-weight: 300;
+                                }
+                            }
+
+                            .method-payment {
+                                height: 60px;
+                                padding: 5px;
+                                font-size: 14px;
+                                font-weight: 400;
+                            }
+                        }
+
+                        .hide-detail {
+                            color: #45c3d2;
+                            font-size: 15px;
+                            width: 300px;
+                            margin: 0 auto;
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
